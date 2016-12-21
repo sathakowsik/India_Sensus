@@ -27,7 +27,6 @@ function findIndexGrad(stateName){
       break;
     }
   }
-
   //Returning the index of state name
   return index;
 }
@@ -44,7 +43,11 @@ rl.on('line', function(line) {
       var eachObj = {};
 
       //Storing the state name total graduate name and female graduate respective population in each object
-      eachObj['StateName'] = currentLine[3];
+      var sub = currentLine[3];
+      sub = sub.substr(8,sub.length-1);
+      console.log(sub);
+      var state = sub +" ( "+ (+currentLine[40] + +currentLine[41]) +" )";
+      eachObj['StateName'] = state;
       eachObj['TotalFemale'] = +currentLine[40];
       eachObj['TotalMale'] = +currentLine[41];
 

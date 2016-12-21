@@ -84,7 +84,7 @@
             .attr("dx", "-.8em")
             .attr("dy", ".15em")
             .attr("transform", function(d) {
-                return "rotate(-45)"
+                return "rotate(-90)"
                 });
             svg.append("g").attr("class", "y axis").call(d3.axisLeft(y).tickFormat(d3.format(".0%")));
         })
