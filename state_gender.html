@@ -1,127 +1,94 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
-    <title>State Gender</title>
-    <style>
-        .bar {
-            fill: steelblue;
-        }
+    <title>State Gender wise Percentage Bar Chart</title>
 
-        .axis path {
-            display: none;
-        }
+    <style>
+        @import url("/style.css");
     </style>
 
-
-    <script src="d3/d3.js"></script>
+  <script src="d3/d3.js"></script>
 </head>
 
 <body>
-    <svg width="960" height="500"></svg>
+
     <script>
-        var svg = d3.select("svg"),
-            margin = {
+        var margin = {
                 top: 20,
                 right: 20,
-                bottom: 30,
-                left: 40
+                bottom: 40,
+                left: 60
             },
-            width = +svg.attr("width") - margin.left - margin.right,
-            height = +svg.attr("height") - margin.top - margin.bottom,
-            g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+            width = 1350 - margin.left - margin.right,
+            height = 605 - margin.top - margin.bottom,
+            that = this;
+
+
         var x = d3.scaleBand()
-            .rangeRound([0, width])
-            .padding(0.1)
-            .align(0.1);
+            .range([0, width])
+            .padding(0.2);;
+
         var y = d3.scaleLinear()
-            .rangeRound([height, 0]);
-        var z = d3.scaleOrdinal()
-            .range(["#98abc5", "#8a89a6"]);
-        var stack = d3.stack();
-        d3.json("json/state_gender_graduate_json.json", type, function(error, data) {
+            .range([height, 0]);
+
+        var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+        var svg = d3.select("body").append("svg").attr("width", width + margin.left + margin.right).attr("height", 800).append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        d3.json("json/state_gender_graduate_json.json", function(error, data) {
             if (error) throw error;
-            // data.sort(function(a, b) {
-            //     return b.total - a.total;
-            // });
+
+            color.domain(d3.keys(data[0]).filter(function(key) {
+                return key !== "StateName";
+            }));
+
+
+            data.forEach(function(d) {
+                var y0 = 0;
+
+                d.rates = color.domain().map(function(name) {
+                    return {
+                        name: name,
+                        y0: y0,
+                        y1: y0 += +d[name],
+                        amount: d[name]
+                    };
+                });
+                d.rates.forEach(function(d) {
+                    d.y0 /= y0;
+                    d.y1 /= y0;
+                });
+            });
+
             x.domain(data.map(function(d) {
-              console.log(d.StateName);
                 return d.StateName;
             }));
-            y.domain([0, d3.max(data, function(d) {
-                return d.TotalGraduate;
-            })]).nice();
-            z.domain(data.columns.slice(1));
-            g.selectAll(".serie")
-                .data(stack.keys(data.columns.slice(1))(data))
-                .enter().append("g")
-                .attr("class", "serie")
-                .attr("fill", function(d) {
-                    return z(d.key);
-                })
-                .selectAll("rect")
-                .data(function(d) {
-                    return d;
-                })
-                .enter().append("rect")
-                .attr("x", function(d) {
-                  console.log(d.data.State);
-                    return x(d.data.State);
-                })
-                .attr("y", function(d) {
-                    return y(d[1]);
-                })
-                .attr("height", function(d) {
-                    return y(d[0]) - y(d[1]);
-                })
-                .attr("width", x.bandwidth());
-            g.append("g")
-                .attr("class", "axis axis--x")
-                .attr("transform", "translate(0," + height + ")")
-                .call(d3.axisBottom(x));
-            g.append("g")
-                .attr("class", "axis axis--y")
-                .call(d3.axisLeft(y).ticks(10, "s"))
-                .append("text")
-                .attr("x", 2)
-                .attr("y", y(y.ticks(10).pop()))
-                .attr("dy", "0.35em")
-                .attr("text-anchor", "start")
-                .attr("fill", "#000")
-                .text("Population");
-            var legend = g.selectAll(".legend")
-                .data(data.columns.slice(1).reverse())
-                .enter().append("g")
-                .attr("class", "legend")
-                .attr("transform", function(d, i) {
-                    return "translate(0," + i * 20 + ")";
-                })
-                .style("font", "10px sans-serif");
-            legend.append("rect")
-                .attr("x", width - 18)
-                .attr("width", 18)
-                .attr("height", 18)
-                .attr("fill", z);
-            legend.append("text")
-                .attr("x", width - 24)
-                .attr("y", 9)
-                .attr("dy", ".35em")
-                .attr("text-anchor", "end")
-                .text(function(d) {
-                    return d;
+
+            var State = svg.selectAll(".interest-rate").data(data).enter().append("g").attr("class", "interest-rate").attr("transform", function(d) {
+                return "translate(" + x(d.StateName) + ",0)";
+            });
+
+            State.selectAll("rect").data(function(d) {
+                return d.rates;
+            }).enter().append("rect").attr("width", x.bandwidth()).attr("y", function(d) {
+                return y(d.y1);
+            }).attr("height", function(d) {
+                return y(d.y0) - y(d.y1);
+            }).style("fill", function(d) {
+                return color(d.name);
+            })
+
+            svg.append("g").attr("class", "x axis").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x)).selectAll("text")
+            .style("text-anchor", "end")
+            .attr("dx", "-.8em")
+            .attr("dy", ".15em")
+            .attr("transform", function(d) {
+                return "rotate(-45)"
                 });
-        });
-
-        function type(d, i, columns) {
-            for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
-            d.TotalGraduate = t;
-            return d;
-        }
+            svg.append("g").attr("class", "y axis").call(d3.axisLeft(y).tickFormat(d3.format(".0%")));
+        })
     </script>
-
-
-
 </body>
 
 </html>

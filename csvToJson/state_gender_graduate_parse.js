@@ -45,7 +45,6 @@ rl.on('line', function(line) {
 
       //Storing the state name total graduate name and female graduate respective population in each object
       eachObj['StateName'] = currentLine[3];
-      eachObj['TotalGraduate'] = +currentLine[39];
       eachObj['TotalFemale'] = +currentLine[40];
       eachObj['TotalMale'] = +currentLine[41];
 
@@ -53,7 +52,6 @@ rl.on('line', function(line) {
       if(index !== -1){
         var result = graddata[index];
 
-        result['TotalGraduate'] += eachObj['TotalGraduate'];
         result['TotalFemale'] += eachObj['TotalFemale'];
         result['TotalMale'] += eachObj['TotalMale'];
 
