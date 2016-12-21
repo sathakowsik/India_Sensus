@@ -16,54 +16,39 @@ var rl = readline.createInterface(instream, outstream);
 var graddata = [];
 
 //function to find index of state name
-function findIndexGrad(stateName){
-  var i = graddata.length;
-  var index = -1;
-
-  //Loop to find the index of state name
-  while(i--){
-    if(stateName == graddata[i]['StateName']){
-      index = i;
-      break;
-    }
-  }
-  //Returning the index of state name
-  return index;
+function findIndexGrad(state) {
+   state = state.substr(8, (state.length - 1));
+   var index = null;
+   for (var i = 0; i < graddata.length; i++) {
+       if (state == graddata[i]['StateName']) {
+           index = i;
+           break;
+       }
+   }
+   return index;
 }
 
 //Reading the csv file line by line
 rl.on('line', function(line) {
-    var currentLine = line.split(',');
+   var cols = line.split(',');
 
-    //Checking conditions for picking the required line
-    if (currentLine[4] === 'Total' && currentLine[5] === 'All ages') {
-
-      //Calling findIndexGrad funcion for finding the index of the state name
-      var index = findIndexGrad(currentLine[3]);
-      var eachObj = {};
-
-      //Storing the state name total graduate name and female graduate respective population in each object
-      var sub = currentLine[3];
-      sub = sub.substr(8,sub.length-1);
-      console.log(sub);
-      var state = sub +" ( "+ (+currentLine[40] + +currentLine[41]) +" )";
-      eachObj['StateName'] = state;
-      eachObj['TotalFemale'] = +currentLine[40];
-      eachObj['TotalMale'] = +currentLine[41];
-
-      //Index available means sum and store the popoulation in result
-      if(index !== -1){
-        var result = graddata[index];
-
-        result['TotalFemale'] += eachObj['TotalFemale'];
-        result['TotalMale'] += eachObj['TotalMale'];
-
-        graddata[index] = result;
-      }
-      else {
-        graddata.push(eachObj);
-      }
-    }
+   if (cols[3] != 'INDIA' && cols[4] === 'Total' && cols[5] == 'All ages') {
+       var state = cols[3];
+       state = state.substr(8, (state.length - 1));
+       jsonObj = {};
+       jsonObj['StateName'] = state;
+       jsonObj['Total male'] = +cols[40];
+       jsonObj['Total female'] = +cols[41];
+       var index = findIndexGrad(cols[3]);
+       if (index != null) {
+           var result = graddata[index];
+           result['Total male'] += jsonObj['Total male'];
+           result['Total female'] += jsonObj['Total female'];
+           graddata[index]=result;
+       } else {
+           graddata.push(jsonObj);
+       }
+   }
 });
 //End of rl.line
 

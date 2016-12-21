@@ -1,492 +1,177 @@
 [
   {
-    "StateName": "JAMMU & KASHMIR ( 653764 )",
-    "TotalFemale": 401279,
-    "TotalMale": 252485
+    "StateName": "JAMMU & KASHMIR",
+    "Total male": 426555,
+    "Total female": 265929
   },
   {
-    "StateName": "HIMACHAL PRADESH ( 446609 )",
-    "TotalFemale": 251164,
-    "TotalMale": 195445
+    "StateName": "HIMACHAL PRADESH",
+    "Total male": 293449,
+    "Total female": 223652
   },
   {
-    "StateName": "PUNJAB ( 1760846 )",
-    "TotalFemale": 873776,
-    "TotalMale": 887070
+    "StateName": "PUNJAB",
+    "Total male": 960456,
+    "Total female": 959213
   },
   {
-    "StateName": "CHANDIGARH ( 194453 )",
-    "TotalFemale": 104748,
-    "TotalMale": 89705
+    "StateName": "CHANDIGARH",
+    "Total male": 111494,
+    "Total female": 94542
   },
   {
-    "StateName": "UTTARAKHAND ( 910288 )",
-    "TotalFemale": 512068,
-    "TotalMale": 398220
+    "StateName": "UTTARAKHAND",
+    "Total male": 568963,
+    "Total female": 433434
   },
   {
-    "StateName": "HARYANA ( 1877085 )",
-    "TotalFemale": 1102809,
-    "TotalMale": 774276
+    "StateName": "HARYANA",
+    "Total male": 1183849,
+    "Total female": 810751
   },
   {
-    "StateName": "NCT OF DELHI ( 2757844 )",
-    "TotalFemale": 1535972,
-    "TotalMale": 1221872
+    "StateName": "NCT OF DELHI",
+    "Total male": 1636077,
+    "Total female": 1282115
   },
   {
-    "StateName": "RAJASTHAN ( 3063282 )",
-    "TotalFemale": 2086247,
-    "TotalMale": 977035
+    "StateName": "RAJASTHAN",
+    "Total male": 2461922,
+    "Total female": 1064619
   },
   {
-    "StateName": "UTTAR PRADESH ( 9919838 )",
-    "TotalFemale": 6378138,
-    "TotalMale": 3541700
+    "StateName": "UTTAR PRADESH",
+    "Total male": 7086446,
+    "Total female": 3811759
   },
   {
-    "StateName": "BIHAR ( 3061676 )",
-    "TotalFemale": 2326092,
-    "TotalMale": 735584
+    "StateName": "BIHAR",
+    "Total male": 2471458,
+    "Total female": 764190
   },
   {
-    "StateName": "SIKKIM ( 32669 )",
-    "TotalFemale": 19290,
-    "TotalMale": 13379
+    "StateName": "SIKKIM",
+    "Total male": 24812,
+    "Total female": 18036
   },
   {
-    "StateName": "ARUNACHAL PRADESH ( 53606 )",
-    "TotalFemale": 36430,
-    "TotalMale": 17176
+    "StateName": "ARUNACHAL PRADESH",
+    "Total male": 58823,
+    "Total female": 28114
   },
   {
-    "StateName": "NAGALAND ( 89718 )",
-    "TotalFemale": 53023,
-    "TotalMale": 36695
+    "StateName": "NAGALAND",
+    "Total male": 96513,
+    "Total female": 68531
   },
   {
-    "StateName": "MANIPUR ( 225620 )",
-    "TotalFemale": 135082,
-    "TotalMale": 90538
+    "StateName": "MANIPUR",
+    "Total male": 178447,
+    "Total female": 115688
   },
   {
-    "StateName": "MIZORAM ( 49621 )",
-    "TotalFemale": 29527,
-    "TotalMale": 20094
+    "StateName": "MIZORAM",
+    "Total male": 56437,
+    "Total female": 38959
   },
   {
-    "StateName": "TRIPURA ( 137812 )",
-    "TotalFemale": 88621,
-    "TotalMale": 49191
+    "StateName": "TRIPURA",
+    "Total male": 107556,
+    "Total female": 58240
   },
   {
-    "StateName": "MEGHALAYA ( 90519 )",
-    "TotalFemale": 46311,
-    "TotalMale": 44208
+    "StateName": "MEGHALAYA",
+    "Total male": 77020,
+    "Total female": 77942
   },
   {
-    "StateName": "ASSAM ( 1011345 )",
-    "TotalFemale": 639241,
-    "TotalMale": 372104
+    "StateName": "ASSAM",
+    "Total male": 718327,
+    "Total female": 411992
   },
   {
-    "StateName": "WEST BENGAL ( 4827817 )",
-    "TotalFemale": 3088673,
-    "TotalMale": 1739144
+    "StateName": "WEST BENGAL",
+    "Total male": 3463977,
+    "Total female": 1891297
   },
   {
-    "StateName": "JHARKHAND ( 1328477 )",
-    "TotalFemale": 906174,
-    "TotalMale": 422303
+    "StateName": "JHARKHAND",
+    "Total male": 1039975,
+    "Total female": 492195
   },
   {
-    "StateName": "ODISHA ( 1783797 )",
-    "TotalFemale": 1174184,
-    "TotalMale": 609613
+    "StateName": "ODISHA",
+    "Total male": 1303987,
+    "Total female": 661902
   },
   {
-    "StateName": "CHHATTISGARH ( 1018853 )",
-    "TotalFemale": 659081,
-    "TotalMale": 359772
+    "StateName": "CHHATTISGARH",
+    "Total male": 799269,
+    "Total female": 417319
   },
   {
-    "StateName": "MADHYA PRADESH ( 3222802 )",
-    "TotalFemale": 2051127,
-    "TotalMale": 1171675
+    "StateName": "MADHYA PRADESH",
+    "Total male": 2311433,
+    "Total female": 1279956
   },
   {
-    "StateName": "GUJARAT ( 3174158 )",
-    "TotalFemale": 1891932,
-    "TotalMale": 1282226
+    "StateName": "GUJARAT",
+    "Total male": 2083498,
+    "Total female": 1388297
   },
   {
-    "StateName": "DAMAN & DIU ( 12802 )",
-    "TotalFemale": 8425,
-    "TotalMale": 4377
+    "StateName": "DAMAN & DIU",
+    "Total male": 8774,
+    "Total female": 4575
   },
   {
-    "StateName": "DADRA & NAGAR HAVELI ( 19174 )",
-    "TotalFemale": 12227,
-    "TotalMale": 6947
+    "StateName": "DADRA & NAGAR HAVELI",
+    "Total male": 13880,
+    "Total female": 7899
   },
   {
-    "StateName": "MAHARASHTRA ( 8639081 )",
-    "TotalFemale": 5167671,
-    "TotalMale": 3471410
+    "StateName": "MAHARASHTRA",
+    "Total male": 5730823,
+    "Total female": 3774694
   },
   {
-    "StateName": "ANDHRA PRADESH ( 5577387 )",
-    "TotalFemale": 3632622,
-    "TotalMale": 1944765
+    "StateName": "ANDHRA PRADESH",
+    "Total male": 4125374,
+    "Total female": 2182506
   },
   {
-    "StateName": "KARNATAKA ( 4043647 )",
-    "TotalFemale": 2489209,
-    "TotalMale": 1554438
+    "StateName": "KARNATAKA",
+    "Total male": 2799580,
+    "Total female": 1696871
   },
   {
-    "StateName": "GOA ( 146828 )",
-    "TotalFemale": 74077,
-    "TotalMale": 72751
+    "StateName": "GOA",
+    "Total male": 77010,
+    "Total female": 75121
   },
   {
-    "StateName": "LAKSHADWEEP ( 2302 )",
-    "TotalFemale": 1458,
-    "TotalMale": 844
+    "StateName": "LAKSHADWEEP",
+    "Total male": 2682,
+    "Total female": 1606
   },
   {
-    "StateName": "KERALA ( 2531321 )",
-    "TotalFemale": 1131336,
-    "TotalMale": 1399985
+    "StateName": "KERALA",
+    "Total male": 1187364,
+    "Total female": 1474710
   },
   {
-    "StateName": "TAMIL NADU ( 5457742 )",
-    "TotalFemale": 3119342,
-    "TotalMale": 2338400
+    "StateName": "TAMIL NADU",
+    "Total male": 3495384,
+    "Total female": 2577695
   },
   {
-    "StateName": "PUDUCHERRY ( 142029 )",
-    "TotalFemale": 79482,
-    "TotalMale": 62547
+    "StateName": "PUDUCHERRY",
+    "Total male": 87072,
+    "Total female": 67712
   },
   {
-    "StateName": "ANDAMAN & NICOBAR ISLANDS ( 24159 )",
-    "TotalFemale": 13622,
-    "TotalMale": 10537
-  },
-  {
-    "StateName": " ( 5542477 )",
-    "TotalFemale": 3751759,
-    "TotalMale": 1790718
-  },
-  {
-    "StateName": "JAMMU & KASHMIR ( 19400 )",
-    "TotalFemale": 11808,
-    "TotalMale": 7592
-  },
-  {
-    "StateName": "HIMACHAL PRADESH ( 53509 )",
-    "TotalFemale": 31806,
-    "TotalMale": 21703
-  },
-  {
-    "StateName": "PUNJAB ( 158823 )",
-    "TotalFemale": 86680,
-    "TotalMale": 72143
-  },
-  {
-    "StateName": "CHANDIGARH ( 11583 )",
-    "TotalFemale": 6746,
-    "TotalMale": 4837
-  },
-  {
-    "StateName": "UTTARAKHAND ( 73241 )",
-    "TotalFemale": 45439,
-    "TotalMale": 27802
-  },
-  {
-    "StateName": "HARYANA ( 117515 )",
-    "TotalFemale": 81040,
-    "TotalMale": 36475
-  },
-  {
-    "StateName": "NCT OF DELHI ( 160348 )",
-    "TotalFemale": 100105,
-    "TotalMale": 60243
-  },
-  {
-    "StateName": "RAJASTHAN ( 263979 )",
-    "TotalFemale": 209577,
-    "TotalMale": 54402
-  },
-  {
-    "StateName": "UTTAR PRADESH ( 960092 )",
-    "TotalFemale": 695534,
-    "TotalMale": 264558
-  },
-  {
-    "StateName": "BIHAR ( 161200 )",
-    "TotalFemale": 135585,
-    "TotalMale": 25615
-  },
-  {
-    "StateName": "SIKKIM ( 778 )",
-    "TotalFemale": 445,
-    "TotalMale": 333
-  },
-  {
-    "StateName": "MANIPUR ( 8329 )",
-    "TotalFemale": 5071,
-    "TotalMale": 3258
-  },
-  {
-    "StateName": "MIZORAM ( 94 )",
-    "TotalFemale": 61,
-    "TotalMale": 33
-  },
-  {
-    "StateName": "TRIPURA ( 15910 )",
-    "TotalFemale": 10908,
-    "TotalMale": 5002
-  },
-  {
-    "StateName": "MEGHALAYA ( 546 )",
-    "TotalFemale": 351,
-    "TotalMale": 195
-  },
-  {
-    "StateName": "ASSAM ( 44228 )",
-    "TotalFemale": 29238,
-    "TotalMale": 14990
-  },
-  {
-    "StateName": "WEST BENGAL ( 465425 )",
-    "TotalFemale": 333593,
-    "TotalMale": 131832
-  },
-  {
-    "StateName": "JHARKHAND ( 59431 )",
-    "TotalFemale": 46512,
-    "TotalMale": 12919
-  },
-  {
-    "StateName": "ODISHA ( 117233 )",
-    "TotalFemale": 84501,
-    "TotalMale": 32732
-  },
-  {
-    "StateName": "CHHATTISGARH ( 88351 )",
-    "TotalFemale": 63773,
-    "TotalMale": 24578
-  },
-  {
-    "StateName": "MADHYA PRADESH ( 247213 )",
-    "TotalFemale": 174978,
-    "TotalMale": 72235
-  },
-  {
-    "StateName": "GUJARAT ( 163935 )",
-    "TotalFemale": 109616,
-    "TotalMale": 54319
-  },
-  {
-    "StateName": "DAMAN & DIU ( 377 )",
-    "TotalFemale": 247,
-    "TotalMale": 130
-  },
-  {
-    "StateName": "DADRA & NAGAR HAVELI ( 373 )",
-    "TotalFemale": 241,
-    "TotalMale": 132
-  },
-  {
-    "StateName": "MAHARASHTRA ( 680846 )",
-    "TotalFemale": 436657,
-    "TotalMale": 244189
-  },
-  {
-    "StateName": "ANDHRA PRADESH ( 583415 )",
-    "TotalFemale": 385187,
-    "TotalMale": 198228
-  },
-  {
-    "StateName": "KARNATAKA ( 350790 )",
-    "TotalFemale": 239585,
-    "TotalMale": 111205
-  },
-  {
-    "StateName": "GOA ( 1313 )",
-    "TotalFemale": 712,
-    "TotalMale": 601
-  },
-  {
-    "StateName": "KERALA ( 120078 )",
-    "TotalFemale": 51127,
-    "TotalMale": 68951
-  },
-  {
-    "StateName": "TAMIL NADU ( 601367 )",
-    "TotalFemale": 367046,
-    "TotalMale": 234321
-  },
-  {
-    "StateName": "PUDUCHERRY ( 12755 )",
-    "TotalFemale": 7590,
-    "TotalMale": 5165
-  },
-  {
-    "StateName": " ( 1763879 )",
-    "TotalFemale": 1190299,
-    "TotalMale": 573580
-  },
-  {
-    "StateName": "JAMMU & KASHMIR ( 19320 )",
-    "TotalFemale": 13468,
-    "TotalMale": 5852
-  },
-  {
-    "StateName": "HIMACHAL PRADESH ( 16983 )",
-    "TotalFemale": 10479,
-    "TotalMale": 6504
-  },
-  {
-    "StateName": "UTTARAKHAND ( 18868 )",
-    "TotalFemale": 11456,
-    "TotalMale": 7412
-  },
-  {
-    "StateName": "RAJASTHAN ( 199280 )",
-    "TotalFemale": 166098,
-    "TotalMale": 33182
-  },
-  {
-    "StateName": "UTTAR PRADESH ( 18275 )",
-    "TotalFemale": 12774,
-    "TotalMale": 5501
-  },
-  {
-    "StateName": "BIHAR ( 12772 )",
-    "TotalFemale": 9781,
-    "TotalMale": 2991
-  },
-  {
-    "StateName": "SIKKIM ( 9401 )",
-    "TotalFemale": 5077,
-    "TotalMale": 4324
-  },
-  {
-    "StateName": "ARUNACHAL PRADESH ( 33331 )",
-    "TotalFemale": 22393,
-    "TotalMale": 10938
-  },
-  {
-    "StateName": "NAGALAND ( 75326 )",
-    "TotalFemale": 43490,
-    "TotalMale": 31836
-  },
-  {
-    "StateName": "MANIPUR ( 60186 )",
-    "TotalFemale": 38294,
-    "TotalMale": 21892
-  },
-  {
-    "StateName": "MIZORAM ( 45681 )",
-    "TotalFemale": 26849,
-    "TotalMale": 18832
-  },
-  {
-    "StateName": "TRIPURA ( 12074 )",
-    "TotalFemale": 8027,
-    "TotalMale": 4047
-  },
-  {
-    "StateName": "MEGHALAYA ( 63897 )",
-    "TotalFemale": 30358,
-    "TotalMale": 33539
-  },
-  {
-    "StateName": "ASSAM ( 74746 )",
-    "TotalFemale": 49848,
-    "TotalMale": 24898
-  },
-  {
-    "StateName": "WEST BENGAL ( 62032 )",
-    "TotalFemale": 41711,
-    "TotalMale": 20321
-  },
-  {
-    "StateName": "JHARKHAND ( 144262 )",
-    "TotalFemale": 87289,
-    "TotalMale": 56973
-  },
-  {
-    "StateName": "ODISHA ( 64859 )",
-    "TotalFemale": 45302,
-    "TotalMale": 19557
-  },
-  {
-    "StateName": "CHHATTISGARH ( 109384 )",
-    "TotalFemale": 76415,
-    "TotalMale": 32969
-  },
-  {
-    "StateName": "MADHYA PRADESH ( 121374 )",
-    "TotalFemale": 85328,
-    "TotalMale": 36046
-  },
-  {
-    "StateName": "GUJARAT ( 133702 )",
-    "TotalFemale": 81950,
-    "TotalMale": 51752
-  },
-  {
-    "StateName": "DAMAN & DIU ( 170 )",
-    "TotalFemale": 102,
-    "TotalMale": 68
-  },
-  {
-    "StateName": "DADRA & NAGAR HAVELI ( 2232 )",
-    "TotalFemale": 1412,
-    "TotalMale": 820
-  },
-  {
-    "StateName": "MAHARASHTRA ( 185590 )",
-    "TotalFemale": 126495,
-    "TotalMale": 59095
-  },
-  {
-    "StateName": "ANDHRA PRADESH ( 147078 )",
-    "TotalFemale": 107565,
-    "TotalMale": 39513
-  },
-  {
-    "StateName": "KARNATAKA ( 102014 )",
-    "TotalFemale": 70786,
-    "TotalMale": 31228
-  },
-  {
-    "StateName": "GOA ( 3990 )",
-    "TotalFemale": 2221,
-    "TotalMale": 1769
-  },
-  {
-    "StateName": "LAKSHADWEEP ( 1986 )",
-    "TotalFemale": 1224,
-    "TotalMale": 762
-  },
-  {
-    "StateName": "KERALA ( 10675 )",
-    "TotalFemale": 4901,
-    "TotalMale": 5774
-  },
-  {
-    "StateName": "TAMIL NADU ( 13970 )",
-    "TotalFemale": 8996,
-    "TotalMale": 4974
-  },
-  {
-    "StateName": "ANDAMAN & NICOBAR ISLANDS ( 421 )",
-    "TotalFemale": 210,
-    "TotalMale": 211
+    "StateName": "ANDAMAN & NICOBAR ISLANDS",
+    "Total male": 13832,
+    "Total female": 10748
   }
 ]
