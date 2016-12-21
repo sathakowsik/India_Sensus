@@ -22,7 +22,7 @@ function findIndexGrad(stateName){
 
   //Loop to find the index of state name
   while(i--){
-    if(stateName == graddata[i]['State-Name']){
+    if(stateName == graddata[i]['StateName']){
       index = i;
       break;
     }
@@ -44,18 +44,18 @@ rl.on('line', function(line) {
       var eachObj = {};
 
       //Storing the state name total graduate name and female graduate respective population in each object
-      eachObj['State-Name'] = currentLine[3];
-      eachObj['Total-Graduate'] = +currentLine[39];
-      eachObj['Total-Female'] = +currentLine[40];
-      eachObj['Total-Male'] = +currentLine[41];
+      eachObj['StateName'] = currentLine[3];
+      eachObj['TotalGraduate'] = +currentLine[39];
+      eachObj['TotalFemale'] = +currentLine[40];
+      eachObj['TotalMale'] = +currentLine[41];
 
       //Index available means sum and store the popoulation in result
       if(index !== -1){
         var result = graddata[index];
 
-        result['Total-Graduate'] += eachObj['Total-Graduate'];
-        result['Total-Female'] += eachObj['Total-Female'];
-        result['Total-Male'] += eachObj['Total-Male'];
+        result['TotalGraduate'] += eachObj['TotalGraduate'];
+        result['TotalFemale'] += eachObj['TotalFemale'];
+        result['TotalMale'] += eachObj['TotalMale'];
 
         graddata[index] = result;
       }

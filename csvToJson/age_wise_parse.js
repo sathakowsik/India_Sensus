@@ -22,7 +22,7 @@ function findIndexAge(ageGroup){
 
   //Loop to find the index of age group
   while(i--){
-    if(ageGroup == agedata[i]['age-group']){
+    if(ageGroup == agedata[i]['agegroup']){
       index = i;
       break;
     }
@@ -41,7 +41,7 @@ rl.on('line', function(line) {
     if(currentLine[3] == 'INDIA' && currentLine[4] == 'Total'){
 
       //Storing the age group and respective population in each object
-      eachObj['age-group'] = currentLine[5];
+      eachObj['agegroup'] = currentLine[5];
       eachObj['population'] = +currentLine[12];
 
       //Calling findIndexAge funcion for finding the index of the age group

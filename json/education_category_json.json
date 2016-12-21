@@ -1,15 +1,31 @@
-[
-  {
-    "Literate": 929164282,
-    "Literate without Education": 42917688,
-    "Below Primary": 187922838,
-    "Primary": 230286790,
-    "Middle": 165085953,
-    "Matric/Secondary": 123969998,
-    "Higher secondary/Intermediate/Pre-University/Senior secondary": 90159789,
-    "Non-technical diploma or certificate not equal to degree": 1162928,
-    "Technical diploma or certificate not equal to degree": 8290083,
-    "Graduate & above": 75595327,
-    "Unclassified": 3772888
-  }
-]
+[{
+    "eduCateg": "literate",
+    "totalPop": 42917688
+}, {
+    "eduCateg": "blwprimary",
+    "totalPop": 187922838
+}, {
+    "eduCateg": "primary",
+    "totalPop": 230286790
+}, {
+    "eduCateg": "middle",
+    "totalPop": 165085953
+}, {
+    "eduCateg": "matricsecon",
+    "totalPop": 123969998
+}, {
+    "eduCateg": "higherinterprepen",
+    "totalPop": 90159789
+}, {
+    "eduCateg": "nontechdipcertifinoteqdeg",
+    "totalPop": 1162928
+}, {
+    "eduCateg": "techdipcertifinoteqdeg",
+    "totalPop": 8290083
+}, {
+    "eduCateg": "gradabv",
+    "totalPop": 75595327
+}, {
+    "eduCateg": "unclas",
+    "totalPop": 3772888
+}]
